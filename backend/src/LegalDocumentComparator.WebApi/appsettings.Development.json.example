@@ -1,0 +1,33 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Debug",
+      "System": "Information",
+      "Microsoft": "Information",
+      "Microsoft.EntityFrameworkCore": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=data/legal-comparator.db"
+  },
+  "Database": {
+    "Path": "data/legal-comparator.db"
+  },
+  "Storage": {
+    "Path": "storage/documents"
+  },
+  "JwtSettings": {
+    "SecretKey": "DevSecretKey_AtLeast32CharactersLong_ForHS256Algorithm_OnlyForDevelopment",
+    "Issuer": "LegalDocumentComparator",
+    "Audience": "LegalDocumentComparatorUsers",
+    "ExpirationHours": "24"
+  },
+  "AI": {
+    "Groq": {
+      "ApiKey": "YOUR_GROQ_API_KEY_HERE",
+      "Model": "llama-3.1-70b-versatile",
+      "BaseUrl": "https://api.groq.com/openai/v1"
+    }
+  }
+}
